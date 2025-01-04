@@ -34,3 +34,6 @@ First we will get user's activities
 Then extract map polyline, we will need to decode it to get coords https://stackoverflow.com/questions/48017792/strava-api-how-to-get-route-image
 
 
+https://developers.google.com/maps/documentation/utilities/polylinealgorithm
+
+https://developers.google.com/maps/documentation/javascript/geometry

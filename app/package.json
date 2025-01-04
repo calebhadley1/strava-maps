@@ -6,6 +6,8 @@
     "dev": "bun run --watch src/index.ts"
   },
   "dependencies": {
+    "@googlemaps/google-maps-services-js": "^3.4.0",
+    "@mapbox/polyline": "^1.2.1",
     "@types/polyline": "^0.1.32",
     "elysia": "latest"
   },

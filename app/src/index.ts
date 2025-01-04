@@ -1,11 +1,12 @@
-/// <reference types="polyline" />
-
 import { Elysia } from "elysia";
+import polyline from "@mapbox/polyline";
 
 const app = new Elysia()
   .get("/", () => get_strava_data)
   .get("/auth", ({ redirect }) => {
-    return redirect(`https://www.strava.com/oauth/authorize?client_id=${Bun.env.CLIENT_ID}&redirect_uri=http://localhost&response_type=code&approval_prompt=auto&scope=read_all,activity:read_all`);
+    return redirect(
+      `https://www.strava.com/oauth/authorize?client_id=${Bun.env.CLIENT_ID}&redirect_uri=http://localhost&response_type=code&approval_prompt=auto&scope=read_all,activity:read_all`
+    );
   })
   .listen(3000);
 
@@ -17,3 +18,4 @@ console.log(
   `🦊 Elysia is running at ${app.server?.hostname}:${app.server?.port}`
 );
 
+console.log(polyline.decode("_p~iF~ps|U_ulLnnqC_mqNvxq`@"));
