@@ -27,7 +27,7 @@ https://developers.strava.com/playground/#/
 Manual flow (to be later automated)
 
 Auth
-Visit https://www.strava.com/oauth/authorize?client_id={CLIENTID}&redirect_uri=http://localhost&response_type=code&approval_prompt=auto&scope=read_all,activity:read_all
+Visit https://www.strava.com/oauth/authorize?client_id={CLIENTID}&redirect_uri=http://localhost:5173/callback&response_type=code&approval_prompt=auto&scope=read_all,activity:read_all
 
 Extract the code param from the URL it redirects to
 
